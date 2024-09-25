@@ -1,0 +1,10 @@
+project: feast_fraud
+registry: ../feature_repo/data/registry.db
+provider: local
+online_store:
+    path: ../feature_repo/data/online_store.db
+offline_store:
+  type: remote
+  host: 127.0.0.1
+  port: 8815
+entity_key_serialization_version: 2
