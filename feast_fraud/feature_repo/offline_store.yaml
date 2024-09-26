@@ -1,0 +1,14 @@
+project: sample
+provider: local
+registry:
+    path: registry-server:80
+    registry_type: remote
+offline_store:
+    type: postgres
+    host: postgresql
+    port: 5432
+    database: feast
+    db_schema: public
+    user: feast
+    password: feast
+entity_key_serialization_version: 2
